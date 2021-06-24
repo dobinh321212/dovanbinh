@@ -182,6 +182,8 @@ class ProductController extends Controller
 
         // Upload file
         if ($request->hasFile('image')) { // dòng này Kiểm tra xem có image có được chọn
+//            // xóa file cũ
+//            @unlink(public_path($product-> image));
             // get file
             $file = $request->file('image');
             // tên file image
