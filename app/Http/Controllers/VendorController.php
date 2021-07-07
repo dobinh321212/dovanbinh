@@ -96,7 +96,7 @@ class VendorController extends Controller
         // bước 3 : chuyển về trang danh sách
         // header('Location: http://mvc.local:8888/?method=danhsach&controller=user');
 
-        return redirect()->route('admin.admin.vendor.index');
+        return redirect()->route('admin.vendor.index');
 
     }
 

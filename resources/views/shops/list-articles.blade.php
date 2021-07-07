@@ -1,31 +1,57 @@
 @extends('shops.layouts.main')
 @section('content')
-    <div class="mainmenu-area">
-        <div class="container">
-            <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="http://dovanbinh.com/">TRANG CHỦ</a></li>
-                        <li><a href="http://dovanbinh.com/danh-muc-san-pham">SẢN PHẨM</a></li>
-                        <li><a href="http://dovanbinh.com/chi-tiet-san-pham">CHI TIẾT SẢN PHÂM</a></li>
-                        <li><a href="http://dovanbinh.com/dat-hang">GIỎ HÀNG</a></li>
-                        <li><a href="http://dovanbinh.com/thanh-toan">THANH TOÁN</a></li>
-                        <li  class="active"><a href="http://dovanbinh.com/tin-tuc">TIN TỨC</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="http://dovanbinh.com/lien-he">LIÊN HỆ</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End mainmenu area -->
 
-    <h1>Tin Tức</h1>
+    <!-- BLOG -->
+
+    <!-- Main Content - start -->
+    <main>
+        <section class="container">
+
+
+            <ul class="b-crumbs">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <span>Blog</span>
+                </li>
+            </ul>
+            <h1 class="main-ttl main-ttl-categs"><span>Blog</span></h1>
+            <!-- Blog Categories -->
+            <ul class="blog-categs">
+                <li class="active"><a href="blog.html">All</a></li>
+                <li><a href="blog.html">News</a></li>
+                <li><a href="blog.html">Reviews</a></li>
+                <li><a href="blog.html">Articles</a></li>
+            </ul>
+
+            <!-- Blog Posts - start -->
+            <div class="posts-list blog-page">
+                @foreach($articles as $article)
+                <div class="cf-sm-6 cf-lg-4 col-xs-6 col-sm-6 col-md-4 posts2-i">
+                    <a class="posts-i-img" href="{{ route('shop.detailArticle', ['slug' => $article->slug]) }} ">
+                        <img width="auto" src="{{ asset($article->image) }}">
+                    </a>
+                    <time class="posts-i-date" datetime="2017-01-01 12:00"><span>09</span> Jan</time>
+                    <h3 class="posts-i-ttl"><a href="post.html">{{ $article->title }}</a></h3>
+                    <p>  {!! $article->summary !!}</p>		<a href="post.html" class="posts-i-more">Read more...</a>
+                </div>
+                @endforeach
+            </div>
+            <!-- Blog Posts - end -->
+
+            <!-- Pagination - start -->
+            <ul class="pagi">
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li class="pagi-next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+            <!-- Pagination - end -->
+        </section>
+    </main>
+    <!-- Main Content - end -->
 @endsection

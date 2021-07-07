@@ -40,6 +40,8 @@
             <li><a href="http://dovanbinh.com/admin/product"><i class="fa fa-database"></i> <span>QL SẢN PHẨM</span></a></li>
             <li><a href="http://dovanbinh.com/admin/banner"><i class="fa fa-photo"></i> <span>QL Banner</span></a></li>
             <li><a href="http://dovanbinh.com/admin/user"><i class="fa fa-database"></i> <span>QL Người Dùng</span></a></li>
+            <li><a href="http://dovanbinh.com/admin/article"><i class="fa fa-database"></i> <span>QL Tin Tức</span></a></li>
+            <li><a href="http://dovanbinh.com/admin/setting"><i class="fa fa-photo"></i> <span>Cấu Hình Website</span></a></li>
 
         </ul>
     </section>

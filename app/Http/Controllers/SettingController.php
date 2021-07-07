@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class SettingController extends Controller
 {
+
     public function index()
     {
         $data = Setting::first();
@@ -32,6 +33,7 @@ class SettingController extends Controller
         $setting->facebook = $request->input('facebook');
         $setting->email = $request->input('email');
         $setting->introduce = $request->input('introduce');
+        $setting->summary = $request->input('summary');
 
         if ($request->hasFile('new_image')) {
             // xóa file cũ

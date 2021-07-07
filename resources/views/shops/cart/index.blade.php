@@ -21,8 +21,10 @@
                     <li class="active"><a href="http://dovanbinh.com/dat-hang">GIỎ HÀNG</a></li>
                     <li><a href="http://dovanbinh.com/thanh-toan">THANH TOÁN</a></li>
                     <li><a href="http://dovanbinh.com/tin-tuc">TIN TỨC</a></li>
-                    <li><a href="#">Others</a></li>
                     <li><a href="http://dovanbinh.com/lien-he">LIÊN HỆ</a></li>
+                    <li><a href="#">CÔNG NGHỆ</a></li>
+                    <li><a href="#">HỎI ĐÁP</a></li>
+                    <li><a href="#">Khác</a></li>
                 </ul>
             </div>
         </div>

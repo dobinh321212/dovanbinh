@@ -72,6 +72,10 @@
                                 <input value="{{ $setting->introduce }}" type="text" class="form-control" id="introduce"
                                        name="introduce" placeholder="">
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Bản Tin</label>
+                                <textarea class="form-control" type="text" id="summary" name="summary" rows="4" cols="50">{{ $setting->summary }}</textarea>
+                            </div>
                         </div>
                         <!-- /.box-body -->
 

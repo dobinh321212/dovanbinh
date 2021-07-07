@@ -42,6 +42,22 @@
                                 <input type="file" class="" id="image" name="image">
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputFile">Ảnh sản phẩm 1</label>
+                                <input type="file" class="" id="image1" name="image1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">Ảnh sản phẩm 2</label>
+                                <input type="file" class="" id="image2" name="image2">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">Ảnh sản phẩm 3</label>
+                                <input type="file" class="" id="image3" name="image3">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">Ảnh sản phẩm 4</label>
+                                <input type="file" class="" id="image4" name="image4">
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputFile">Số lượng</label>
                                 <input style="width: 100px" type="number" class="form-control" id="stock" name="stock" value="1" min="1">
                             </div>

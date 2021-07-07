@@ -94,7 +94,7 @@ class BannerController extends Controller
         $banner->save();
 
         // Chuyển hướng trang về trang danh sách
-        return redirect()->route('admin.admin.banner.index');
+        return redirect()->route('admin.banner.index');
     }
 
 
@@ -177,7 +177,7 @@ class BannerController extends Controller
         $banner->save();
 
         // Chuyển hướng trang về trang danh sách
-        return redirect()->route('admin.admin.banner.index');
+        return redirect()->route('admin.banner.index');
     }
 
     /**
