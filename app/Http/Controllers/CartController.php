@@ -23,10 +23,6 @@ class CartController extends Controller
     {
         return view('shops.cart.index');
     }
-    public function checkout()
-    {
-        return view('shops.cart.checkout');
-    }
     public function postContact(Request $request)
     {
 //        //validate

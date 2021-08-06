@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <meta name = "csrf-token" content="width = device-width, initial-scale=1">
     <title>Điện Tử</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700ii%7CRoboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <base href="{{asset("dovanbinh.com")}}" />
@@ -70,7 +71,20 @@
 {{--    -------------fontend4-----------------}}
     <link type="image/x-icon" rel="Shortcut Icon" href="//cdn01.dienmaycholon.vn/filewebdmclnew/public/default/img/favicon.ico">
 
-    @yield('css')
+
+{{--    ==============--}}
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="fontend/css1/style.css">
+    <link rel="stylesheet" href="fontend/css1/chitietsanpham.css">
+    <!-- js -->
+
 </head>
 <body>
 
@@ -117,5 +131,6 @@
 <!-- Slider -->
 <script type="text/javascript" src="fontend/js3/bxslider.min.js"></script>
 <script type="text/javascript" src="fontend/js3/script.slider.js"></script>
+@yield('my_js')
 </body>
 </html>

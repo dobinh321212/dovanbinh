@@ -1,3 +1,5 @@
+
+
 <!-- Header - start -->
 <header class="header">
     <!-- Logo, Shop-menu - start -->
@@ -11,14 +13,6 @@
             <div class="shop-menu">
                 <ul>
 
-                    <li>
-                        <a href="wishlist.html">
-                            <i class="fa fa-heart"></i>
-                            <span class="shop-menu-ttl">Thích</span>
-                            (<span id="topbar-favorites">1</span>)
-                        </a>
-                    </li>
-
                     <li class="topauth">
                         <a href="#">
                             <i class="fa fa-lock"></i>
@@ -31,10 +25,10 @@
 
                     <li>
                         <div class="h-cart">
-                            <a href="cart.html">
+                            <a href="http://dovanbinh.com/gio-hang">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span class="shop-menu-ttl">Giỏ Hàng</span>
-                                (<b>0</b>)
+{{--                                (<b>0</b>)--}}
                             </a>
                         </div>
                     </li>
@@ -119,11 +113,13 @@
                 <!-- Search - start -->
                 <div class="topsearch">
                     <a id="topsearch-btn" class="topsearch-btn" href="#"><i class="fa fa-search"></i></a>
-                    <form class="topsearch-form" action="#">
-                        <input type="text" placeholder="Tìm Kiếm Sản Phẩm">
+                    <form class="topsearch-form" action="{{ route('shop.search') }}" method="GET">
+                        <input value="{{ isset($keyword) ? $keyword : '' }}" type="text"  name="tu-khoa" placeholder="Tìm Kiếm Sản Phẩm">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
+
+                <!-- CATEGORYS-PRODUCT-SEARCH END -->
                 <!-- Search - end -->
 
             </nav>		</div>

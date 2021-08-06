@@ -80,10 +80,10 @@ jQuery(document).ready(function($){
     });    
     
     // Bootstrap ScrollPSY
-    $('body').scrollspy({ 
-        target: '.navbar-collapse',
-        offset: 95
-    })      
+//    $('body').scrollspy({ 
+   //     target: '.navbar-collapse',
+   //     offset: 95
+   // })      
 });
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

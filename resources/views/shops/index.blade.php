@@ -1,12 +1,20 @@
 
 
 <style>
-    .price {
+    .product-carousel-price {
         color: #ff0000;
     }
     .product-f-image {
+        position: relative;
         height: 243px;
     }
+
+    /*.product-carousel-price{*/
+    /*     position: absolute;*/
+    /*     text-align: center;*/
+    /*     margin: 0px auto;*/
+    /*     bottom: 5px;*/
+    /* }*/
 </style>
 
 
@@ -85,15 +93,15 @@
                                     <div class="product-f-image">
                                         <img src="{{ asset($product -> image) }}" alt="">
                                         <div class="product-hover">
-                                            <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+                                            <a  href="{{ route('shop.addToCart', ['id' => $product->id]) }}" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
                                             <a href="{{ route('shop.detailProduct',['slug' => $product->slug]) }}" class="view-details-link"><i class="fa fa-link"></i> Chi tiết</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="{{ route('shop.detailProduct',['slug' => $product->slug]) }}">{{ $product->name }}</a></h2>
+                                    <h2><a href="{{ route('shop.detailProduct',['slug' => $product->slug ]) }}">{{ $product->name }}</a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins>{{ number_format($product->sale, 0,",",".") }}đ</ins> <del>$100.00</del>
+                                        <ins>{{ number_format($product->sale, 0,",",".") }} đ</ins> <del>{{ number_format($product->price,0,",",".") }} đ</del>
                                     </div>
                                 </div>
                                 @endforeach

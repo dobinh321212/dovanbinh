@@ -10,12 +10,12 @@
 
             <ul class="b-crumbs">
                 <li>
-                    <a href="index.html">
-                        Home
+                    <a href="http://dovanbinh.com/">
+                        Trang Chủ
                     </a>
                 </li>
                 <li>
-                    <span>Blog</span>
+                    <span>Tin Tức</span>
                 </li>
             </ul>
             <h1 class="main-ttl main-ttl-categs"><span>Blog</span></h1>
@@ -35,7 +35,7 @@
                         <img width="auto" src="{{ asset($article->image) }}">
                     </a>
                     <time class="posts-i-date" datetime="2017-01-01 12:00"><span>09</span> Jan</time>
-                    <h3 class="posts-i-ttl"><a href="post.html">{{ $article->title }}</a></h3>
+                    <h3 class="posts-i-ttl"><a href="{{ route('shop.detailArticle', ['slug' => $article->slug]) }}">{{ $article->title }}</a></h3>
                     <p>  {!! $article->summary !!}</p>		<a href="post.html" class="posts-i-more">Read more...</a>
                 </div>
                 @endforeach

@@ -29,16 +29,13 @@
         <ul class="b-crumbs">
             <li>
                 <a href="index.html">
-                    Home
+                    Trang Chủ
                 </a>
             </li>
             <li>
                 <a href="catalog-list.html">
-                    Catalog
+                    Sản Phẩm
                 </a>
-            </li>
-            <li>
-                <span>Women</span>
             </li>
         </ul>
         <div class="section-sb">
@@ -648,7 +645,7 @@
                             <a href="#" class="qview-btn prod-i-qview"><span>Xem</span><i class="fa fa-search"></i></a>
                             <a class="prod-i-compare" href="#"><span>Thống Kê</span><i class="fa fa-bar-chart"></i></a>
                         </p>
-                        <a href="#" class="prod-i-buy">Thêm Vào Giỏ Hàng</a>
+                        <a href="{{ route('shop.addToCart', ['id' => $product->id]) }}" class="prod-i-buy">Thêm Vào Giỏ Hàng</a>
                         <p class="prod-i-properties-label"><i class="fa fa-info"></i></p>
 
                         <div class="prod-i-properties">
