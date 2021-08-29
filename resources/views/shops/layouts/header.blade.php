@@ -46,7 +46,7 @@
 
                 <!-- Catalog menu - start -->
                 <div class="topcatalog">
-                    <a class="topcatalog-btn" href="#">Danh Mục SẢN PHẨM</a>
+                    <a class="topcatalog-btn">Danh Mục SẢN PHẨM</a>
                     <ul class="topcatalog-list">
                         @if(!empty($categories))
                             @foreach($categories as $category)
